@@ -57,11 +57,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/park/:chatId',
+
+    .state('tab.navigation', {
+      url: '/park/navigation',
       views: {
         'tab-park': {
-          templateUrl: 'templates/chat-detail.html',
+          templateUrl: 'templates/navigation.html',
           controller: 'ChatDetailCtrl'
         }
       }
@@ -101,3 +102,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 
 });
+
+

@@ -1,16 +1,13 @@
 <ion-view view-title="Park">
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+      <div class="card">
+		<!-- <a class="item item-image" href="templates/navigation.html"> -->
+		<a class="item item-image" href="#/tab/park/navigation">
+	    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1024px-Parking_icon.svg.png">
+		</a>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
+	  </div>
     </ion-list>
   </ion-content>
 </ion-view>
